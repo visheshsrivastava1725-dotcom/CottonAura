@@ -11,10 +11,11 @@ interface ProductCardProps {
 }
 
 const BADGE_STYLES: Record<string, { bg: string; color: string }> = {
-  'NEW': { bg: '#4A7BF7', color: '#fff' },
+  'NEW': { bg: '#0055FF', color: '#fff' },
   'BESTSELLER': { bg: '#333', color: '#fff' },
   'LOW STOCK': { bg: '#E03030', color: '#fff' },
   'SOLD OUT': { bg: '#1C1C1C', color: '#606060' },
+  'SEASON 1': { bg: '#0055FF', color: '#fff' },
 };
 
 export function ProductCard({ product, index = 0 }: ProductCardProps) {
@@ -115,10 +116,10 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               border: 'none',
               borderRadius: '50%',
               cursor: 'pointer',
-              color: isWishlisted ? '#4A7BF7' : '#A0A0A0',
+              color: isWishlisted ? '#0055FF' : '#A0A0A0',
             }}
           >
-            <Heart size={14} fill={isWishlisted ? '#4A7BF7' : 'none'} />
+            <Heart size={14} fill={isWishlisted ? '#0055FF' : 'none'} />
           </button>
 
           {/* Quick Add Panel */}
@@ -143,7 +144,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
                       width: '28px', height: '26px',
                       border: '1px solid #2A2A2A',
                       borderRadius: '4px',
-                      backgroundColor: addedSize === s.size ? '#4A7BF7' : 'transparent',
+                      backgroundColor: addedSize === s.size ? '#0055FF' : 'transparent',
                       color: addedSize === s.size ? '#fff' : '#A0A0A0',
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '10px',
@@ -156,7 +157,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               </div>
               <button
                 style={{
-                  backgroundColor: '#4A7BF7',
+                  backgroundColor: '#0055FF',
                   border: 'none',
                   borderRadius: '4px',
                   color: '#fff',
@@ -209,7 +210,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           </div>
           <div className="flex items-center gap-1 mt-2">
             {[...Array(5)].map((_, i) => (
-              <span key={i} style={{ color: i < Math.floor(product.rating) ? '#4A7BF7' : '#2A2A2A', fontSize: '11px' }}>★</span>
+              <span key={i} style={{ color: i < Math.floor(product.rating) ? '#0055FF' : '#2A2A2A', fontSize: '11px' }}>★</span>
             ))}
             <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '11px', color: '#606060', marginLeft: '4px' }}>
               ({product.reviewCount})

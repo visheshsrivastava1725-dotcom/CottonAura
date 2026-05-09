@@ -29,8 +29,8 @@ export function HomePage() {
           <img
             src={HERO_IMAGE}
             alt="Cotton Aura Hero"
-            className="w-full h-full"
-            style={{ objectFit: 'cover', objectPosition: 'center top' }}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 30%' }}
           />
           {/* Vignette */}
           <motion.div
@@ -157,7 +157,8 @@ export function HomePage() {
       </section>
 
       {/* ===== NEW ARRIVALS ===== */}
-      <section className="max-w-[1400px] mx-auto px-6 py-16">
+      <section className="py-16 w-full overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6">
         <div className="flex items-end justify-between mb-8">
           <h2
             style={{
@@ -185,21 +186,23 @@ export function HomePage() {
             VIEW ALL <ChevronRight size={14} />
           </Link>
         </div>
+        </div>
 
         {/* Feature Cards + Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-          {[HERO_IMAGE, HERO_IMAGE_2].map((img, i) => (
+        <div className="w-full px-6 md:px-0 mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-0">
+            {[HERO_IMAGE, HERO_IMAGE_2].map((img, i) => (
             <Link
               key={i}
               to="/collections/compression-tees"
-              className="relative overflow-hidden group"
-              style={{ height: '60vh', borderRadius: '4px', backgroundColor: '#141414' }}
+              className="relative overflow-hidden group flex"
+              style={{ borderRadius: '4px', backgroundColor: '#141414' }}
             >
               <img
                 src={img}
                 alt="New Drop"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                style={{ objectPosition: 'center top' }}
+                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                style={{ objectPosition: 'center' }}
               />
               <div
                 className="absolute inset-0"
@@ -249,11 +252,14 @@ export function HomePage() {
             </Link>
           ))}
         </div>
+        </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {newArrivals.map((product, i) => (
+        <div className="max-w-[1400px] mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {newArrivals.map((product, i) => (
             <ProductCard key={product.id} product={product} index={i} />
           ))}
+          </div>
         </div>
       </section>
 

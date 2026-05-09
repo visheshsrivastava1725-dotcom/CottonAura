@@ -224,7 +224,7 @@ export function ProductPage() {
                   style={{
                     padding: '3px 10px',
                     borderRadius: '4px',
-                    backgroundColor: '#4A7BF7',
+                    backgroundColor: '#0055FF',
                     color: '#fff',
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '10px',
@@ -261,7 +261,7 @@ export function ProductPage() {
                   maxWidth: '90%',
                 }}
               >
-                Engineered for the elite. Sculpted for the gym. A second-skin compression that holds without restriction.
+                Compression that looks premium, priced for Lucknow. Sweat-hiding. Photo-ready. Budget-friendly.
               </p>
               <div className="flex items-center gap-2">
                 <div className="flex">
@@ -346,8 +346,8 @@ export function ProductPage() {
                     style={{
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '11px',
-                      color: '#4A7BF7',
-                      backgroundColor: 'rgba(74, 123, 247, 0.1)',
+                      color: '#0055FF',
+                      backgroundColor: 'rgba(0, 85, 255, 0.1)',
                       padding: '2px 8px',
                       borderRadius: '100px',
                       fontWeight: 500,
@@ -357,7 +357,7 @@ export function ProductPage() {
                   </span>
                   <Link
                     to="/sizing"
-                    style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#4A7BF7', textDecoration: 'none' }}
+                    style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#0055FF', textDecoration: 'none' }}
                   >
                     Size Guide →
                   </Link>
@@ -468,7 +468,7 @@ export function ProductPage() {
                     height: '56px',
                     borderRadius: '4px',
                     border: 'none',
-                    backgroundColor: '#4A7BF7',
+                    backgroundColor: '#0055FF',
                     color: '#fff',
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '13px',
@@ -506,13 +506,13 @@ export function ProductPage() {
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
-                  color: isWishlisted ? '#4A7BF7' : '#A0A0A0',
+                  color: isWishlisted ? '#0055FF' : '#A0A0A0',
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '13px',
                   padding: '8px',
                 }}
               >
-                <Heart size={14} fill={isWishlisted ? '#4A7BF7' : 'none'} />
+                <Heart size={14} fill={isWishlisted ? '#0055FF' : 'none'} />
                 {isWishlisted ? 'SAVED TO WISHLIST' : '♡ SAVE TO WISHLIST'}
               </button>
             </div>
@@ -523,9 +523,9 @@ export function ProductPage() {
               style={{ backgroundColor: '#141414', border: '1px solid #2A2A2A', marginBottom: '24px' }}
             >
               {[
-                { icon: '🚚', title: 'Carbon Neutral', desc: 'Shipping' },
-                { icon: '🔒', title: 'Secure', desc: '256-bit SSL' },
-                { icon: '🧵', title: 'Elite', desc: 'Fabric Prep' },
+                { icon: '🚚', title: 'Lucknow Express', desc: 'Delivery' },
+                { icon: '🔒', title: 'Secure', desc: 'UPI / COD' },
+                { icon: '🧵', title: 'Sweat-Hiding', desc: 'Pro Tech' },
               ].map(item => (
                 <div key={item.title} className="text-center">
                   <div style={{ fontSize: '16px', marginBottom: '4px' }}>{item.icon}</div>
@@ -588,7 +588,7 @@ export function ProductPage() {
               >
                 <div className="flex mb-2">
                   {[...Array(review.rating)].map((_, i) => (
-                    <span key={i} style={{ color: '#4A7BF7', fontSize: '12px' }}>★</span>
+                    <span key={i} style={{ color: '#0055FF', fontSize: '12px' }}>★</span>
                   ))}
                 </div>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: '#F2F2F2', lineHeight: 1.6, marginBottom: '12px' }}>
@@ -637,7 +637,7 @@ export function ProductPage() {
             height: '52px',
             borderRadius: '4px',
             border: 'none',
-            backgroundColor: isSoldOut ? '#1C1C1C' : '#4A7BF7',
+          backgroundColor: isSoldOut ? '#1C1C1C' : '#0055FF',
             color: isSoldOut ? '#606060' : '#fff',
             fontFamily: 'DM Sans, sans-serif',
             fontSize: '13px',

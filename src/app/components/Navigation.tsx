@@ -55,7 +55,7 @@ export function Navigation() {
                 textDecoration: 'none',
               }}
             >
-              COTTON AURA
+              COOTEN AURA
             </Link>
 
             {/* Center Nav - Desktop */}
@@ -69,7 +69,7 @@ export function Navigation() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '13px',
                     letterSpacing: '0.06em',
-                    color: location.pathname === link.path ? '#4A7BF7' : '#F2F2F2',
+                    color: location.pathname === link.path ? '#0055FF' : '#F2F2F2',
                     textDecoration: 'none',
                     textTransform: 'uppercase',
                   }}
@@ -78,7 +78,7 @@ export function Navigation() {
                   <span
                     className="absolute bottom-[-4px] left-0 h-[1px] transition-all duration-200"
                     style={{
-                      backgroundColor: '#4A7BF7',
+                      backgroundColor: '#0055FF',
                       width: location.pathname === link.path ? '100%' : '0',
                     }}
                   />
@@ -90,7 +90,7 @@ export function Navigation() {
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '13px',
                   letterSpacing: '0.06em',
-                  color: '#4A7BF7',
+                  color: '#0055FF',
                   textDecoration: 'none',
                   textTransform: 'uppercase',
                 }}
@@ -118,7 +118,7 @@ export function Navigation() {
                     className="absolute -top-1 -right-1 rounded-full flex items-center justify-center"
                     style={{
                       width: '14px', height: '14px',
-                      backgroundColor: '#4A7BF7',
+                      backgroundColor: '#0055FF',
                       fontSize: '9px', color: '#fff',
                       fontFamily: 'DM Sans, sans-serif',
                     }}
@@ -138,7 +138,7 @@ export function Navigation() {
                     className="absolute -top-1 -right-1 rounded-full flex items-center justify-center"
                     style={{
                       width: '16px', height: '16px',
-                      backgroundColor: '#4A7BF7',
+                      backgroundColor: '#0055FF',
                       fontSize: '9px', color: '#fff',
                       fontFamily: 'DM Sans, sans-serif',
                       fontWeight: 600,
@@ -247,7 +247,7 @@ export function Navigation() {
         <Link
           to="/"
           className="flex flex-col items-center gap-1"
-          style={{ color: location.pathname === '/' ? '#4A7BF7' : '#A0A0A0', textDecoration: 'none' }}
+          style={{ color: location.pathname === '/' ? '#0055FF' : '#A0A0A0', textDecoration: 'none' }}
         >
           <Home size={20} />
           <span style={{ fontSize: '10px', fontFamily: 'DM Sans, sans-serif' }}>Home</span>
@@ -255,7 +255,7 @@ export function Navigation() {
         <Link
           to="/collections/compression-tees"
           className="flex flex-col items-center gap-1"
-          style={{ color: location.pathname.startsWith('/collections') ? '#4A7BF7' : '#A0A0A0', textDecoration: 'none' }}
+          style={{ color: location.pathname.startsWith('/collections') ? '#0055FF' : '#A0A0A0', textDecoration: 'none' }}
         >
           <Grid2x2 size={20} />
           <span style={{ fontSize: '10px', fontFamily: 'DM Sans, sans-serif' }}>Shop</span>
@@ -280,7 +280,7 @@ export function Navigation() {
               className="absolute -top-1 right-3 rounded-full flex items-center justify-center"
               style={{
                 width: '14px', height: '14px',
-                backgroundColor: '#4A7BF7',
+                 backgroundColor: '#0055FF',
                 fontSize: '8px', color: '#fff',
               }}
             >

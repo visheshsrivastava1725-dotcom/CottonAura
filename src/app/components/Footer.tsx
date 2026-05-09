@@ -18,7 +18,7 @@ export function Footer() {
                 marginBottom: '8px',
               }}
             >
-              COTTON AURA
+              COOTEN AURA
             </div>
             <p
               style={{
@@ -29,7 +29,7 @@ export function Footer() {
                 lineHeight: 1.6,
               }}
             >
-              Compression Tees. Built for the Gym.
+              Budget Compression Tees. Priced for Lucknow.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -201,7 +201,7 @@ export function Footer() {
               color: '#606060',
             }}
           >
-            © 2026 Cotton Aura · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Privacy Policy</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Terms</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Refund Policy</a>
+            © 2026 Cooten Aura · Lucknow, UP · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Privacy Policy</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Terms</a>
           </p>
           <div className="flex items-center gap-3">
             {['UPI', 'RuPay', 'Visa', 'Mastercard', 'PayPal'].map(method => (

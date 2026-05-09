@@ -1,0 +1,1202 @@
+# COTTON AURA — MASTER SYSTEM PROMPT [REVISED & CORRECTED]
+## Gym Compression Tees · Reseller E-Commerce · Performance Streetwear
+### Complete Creative Direction · UX Architecture · Conversion Blueprint
+#### Version 2.0 — Built on Real Brand Identity (@thecottonaura)
+
+---
+
+> **BRAND CORRECTION NOTICE:**
+> Cotton Aura (@thecottonaura) is NOT a soft linen lifestyle brand.
+> It is a **GYM COMPRESSION TEE brand with a reseller model.**
+> The audience is gym-going men and women, physique-aware, fitness-obsessed,
+> culturally tuned into aesthetic fitness content on Instagram and TikTok.
+> Every decision in this document reflects that truth.
+> Previous version is void. Build from this document only.
+
+---
+
+> You are building a **complete performance-first e-commerce store** for **Cotton Aura** — a gym compression tee brand that operates on a reseller model. The customer is someone who trains consistently, cares deeply about how they look at the gym, follows fitness creators on Instagram, and makes purchasing decisions based on fit, physique enhancement, and peer validation. The site must convert at the speed of an Instagram impulse buy while feeling premium enough to justify the price point.
+
+---
+
+## PART I — BRAND IDENTITY & REAL POSITIONING
+
+### 1.1 What Cotton Aura Actually Is
+
+```
+BRAND TYPE:      Compression gymwear reseller / D2C performance brand
+PRIMARY PRODUCT: Compression tees (men's — tight fit, muscle-defining, second-skin)
+SECONDARY:       Compression vests, shorts, full sets — as catalog expands
+MODEL:           Reseller — sources compression blanks, brands and sells under Cotton Aura
+AUDIENCE:        Men aged 18–32, gym-focused, physique-aware, social-media-active
+MARKET:          India / South Asia primary (based on brand signals) + global online
+PRICE POINT:     Mid-range — affordable performance, not luxury, not budget
+TONE:            Confident, gym-culture-fluent, body-positive (in an athletic sense),
+                 aspirational without being unattainable
+
+CUSTOMER PROFILE:
+  - Goes to the gym 4–6x per week
+  - Follows physique influencers and bodybuilding content
+  - Buys gym wear based on how it will make him look in the mirror
+  - Values: FIT (tight, defining), QUALITY (doesn't lose shape after wash),
+    LOOK (clean, aesthetic, mirror-ready), VALUE (not paying Gymshark prices)
+  - Discovery: Instagram reels, WhatsApp groups, gym community word-of-mouth
+```
+
+### 1.2 How the Site Should Feel
+
+```
+The experience should feel like:
+  - Walking into a premium gym store that's cool, not corporate
+  - A brand that a physique influencer would actually wear and post about
+  - Gymshark's energy but more raw and culturally grounded
+  - The Instagram aesthetic of @thecottonaura brought to the web — dark,
+    body-focused, confident, direct
+
+It must NOT feel like:
+  - A generic Shopify dropshipping store
+  - A corporate sports brand (Nike, Adidas — too establishment)
+  - The soft linen lifestyle brand it was previously designed as (completely wrong)
+  - A student project or amateur store
+  - Cheap — even though it's a reseller, the brand must feel legitimate and premium
+```
+
+### 1.3 Competitive Context
+
+```
+Cotton Aura competes with and should feel as premium as:
+  - Gymshark (aspiration benchmark — the conversion standard)
+  - ICANIWILL
+  - Alphalete
+  - Aesthetic Nation (India market)
+  - BERSERK India
+  - Local compression resellers on Instagram
+
+Differentiator Cotton Aura must own:
+  "The compression tee that actually fits the way you train."
+  — Not just performance. The physique-defining fit is the product.
+```
+
+---
+
+## PART II — VISUAL IDENTITY SYSTEM
+
+### 2.1 Color Architecture
+
+```
+PALETTE PHILOSOPHY:
+Dark, high-contrast, gym-aesthetic. Like a premium gym in low light.
+Black and deep surfaces dominate — making the human body (and the product on it)
+the only real color on the page. Products stand out against dark backgrounds
+the same way a physique stands out under gym lighting.
+
+PRIMARY SURFACES:
+  Gym Black:         #0C0C0C   (primary background — deep, warm black)
+  Surface Elevated:  #141414   (card backgrounds, panels)
+  Surface Mid:       #1C1C1C   (secondary panels, input backgrounds)
+  Border Subtle:     #2A2A2A   (all dividers, borders)
+
+TEXT HIERARCHY:
+  White Pure:        #F2F2F2   (primary text — warm off-white, not pure)
+  Gray Light:        #A0A0A0   (secondary text, captions, specs)
+  Gray Mid:          #606060   (muted info, disabled)
+
+BRAND ACCENTS:
+  Cotton Blue:       #4A7BF7   (primary brand accent — CTAs, active states,
+                               key highlights — blue has performance/tech coding)
+  Electric White:    #FFFFFF   (high-contrast text moments, logo on dark)
+  Performance Red:   #E03030   (urgency — sold out, limited stock, flash sale)
+  Warm Khaki:        #C9A96E   (optional secondary — for premium colourway/product
+                               moments — gives the "cotton" warmth the name implies)
+  Gym Concrete:      #3A3A3A   (product card neutral backgrounds)
+
+USAGE RULES:
+  — 75% of screen: Gym Black or Surface Elevated
+  — Cotton Blue: CTAs, active states, accent elements ONLY — not backgrounds
+  — Performance Red: urgency and scarcity ONLY — never decorative
+  — All product images: shot on DARK backgrounds or on-body (not white studio)
+  — Photography: high-contrast, slightly desaturated, gym-light treatment
+
+NOTE ON THE BRAND NAME "COTTON AURA":
+  Despite the name suggesting softness, the visual identity is performance-dark.
+  The name is the warmth signal — the product delivers toughness.
+  This tension (soft name, hard aesthetic) is the brand's personality.
+```
+
+### 2.2 Typography System
+
+```
+DISPLAY / PERFORMANCE FONT — "Druk" or "Bebas Neue" or "Barlow Condensed Bold"
+  Character: Condensed, powerful, athletic — the typography of jersey numbers
+             and sports editorial. Commands space without filling it.
+  Use: Hero headlines, collection names, campaign statements, section titles,
+       product category headers, sale/urgency banners
+  Weight: Bold / Extra Bold only
+  Sizes:
+    Hero H1:          clamp(64px, 12vw, 160px)
+    Section H2:       clamp(40px, 6vw, 96px)
+    Feature callout:  clamp(28px, 4vw, 60px)
+    Category label:   clamp(20px, 2.5vw, 36px)
+  Letter-spacing: -0.01em to 0em
+  Line-height: 0.88–0.95 (compressed, athletic stacking)
+  Transform: ALL CAPS always for display type
+
+BODY / UI FONT — "DM Sans" or "Inter" or "Neue Haas Grotesk"
+  Character: Clean, modern, direct — reads well at any size on dark backgrounds
+  Use: ALL body copy, navigation, product names in grid, descriptions,
+       prices, size selectors, form fields, checkout, cart metadata
+  Weights: 400 (regular), 500 (medium for emphasis), 600 (semi-bold for prices/CTAs)
+  Sizes:
+    Navigation:    13px, letter-spacing 0.06em
+    Body:          15px, line-height 1.7
+    Product name:  14–16px
+    Price:         18–22px, weight 600
+    Caption/meta:  12px, letter-spacing 0.04em
+    CTA buttons:   13–14px, letter-spacing 0.08em, all-caps
+
+ACCENT / TECHNICAL FONT — "Space Mono" or "IBM Plex Mono"
+  Use: Product spec tables (fabric %, gsm, stretch rating), size charts,
+       stock status ("LAST 3 UNITS"), technical data points
+  Size: 11–13px only
+  Creates a "technical spec sheet" feel — signals quality and precision
+
+TYPOGRAPHIC RULES:
+  — Display font for emotional/campaign moments (hero, section headings)
+  — DM Sans for all commerce and interface copy
+  — Mono for technical specs and scarcity signals
+  — Never more than 2 fonts visible simultaneously in one section
+  — All prices in DM Sans semi-bold — never lightweight pricing
+  — Product names sentence case (not all-caps) — easier to scan
+```
+
+### 2.3 Spacing System
+
+```
+BASE UNIT: 8px — all multiples of 8
+
+4px   — micro (badge padding, icon gap)
+8px   — xs (tight inline)
+12px  — product grid gap (tight — gym stores feel abundant)
+16px  — sm (component internal)
+24px  — md (standard gap)
+32px  — lg (card padding, grouped elements)
+48px  — xl (section internal)
+64px  — 2xl (component separation)
+80px  — section padding standard
+120px — section padding large  
+160px — hero internal
+
+SPATIAL PHILOSOPHY:
+  This is not a luxury brand that breathes and floats.
+  It is a performance brand that packs value and confidence into every scroll.
+  Product grids are dense (12px gap). Trust signals are stacked efficiently.
+  The only generous whitespace moments are: hero, campaign callout, brand story.
+  Everywhere else: purposeful density. Show the products. Make it easy to add to bag.
+```
+
+### 2.4 Surface Rules
+
+```
+Border radius:
+  Product cards:      4px (slight warmth — not brutal zero, not bubbly)
+  Buttons:            4px (matches cards — consistent, clean)
+  Form inputs:        4px
+  Modals:             8px
+  Size buttons:       4px
+  Badges/tags:        4px
+
+Borders: 1px solid #2A2A2A on all card surfaces
+Product images: no border — bleed into dark background
+
+Shadows:
+  Cards on hover: 0 8px 32px rgba(0,0,0,0.4) — depth, not decoration
+  Modal: 0 24px 64px rgba(0,0,0,0.6)
+  Sticky nav on scroll: 0 2px 20px rgba(0,0,0,0.5)
+
+Photography treatment:
+  All product images: dark background, high contrast
+  On-body shots: gym environment OR clean dark studio
+  Never: white studio background on product cards
+  Slight vignette on lifestyle images: subtle dark edge
+  Video content: high contrast, slightly desaturated — cinematic gym feel
+```
+
+---
+
+## PART III — PRELOADER
+
+```
+Duration: 0.8–1.2 seconds (fast — gym audience has low patience)
+
+Visual:
+  Background: Gym Black (#0C0C0C)
+  Center: "COTTON AURA" — display font, 20px, letter-spacing 0.3em, all-caps, white
+  Below: thin horizontal progress bar — 200px wide, 2px height
+    Track: #2A2A2A
+    Fill: Cotton Blue (#4A7BF7), animates left to right over 0.8s
+  Tagline (optional): DM Sans, 11px, #606060 — "COMPRESSION · PERFORMANCE · CULTURE"
+
+Exit: Gym Black fades out over 0.4s, page content visible below
+Philosophy: Fast, functional — like a warmup, not a meditation
+```
+
+---
+
+## PART IV — NAVIGATION SYSTEM
+
+### Desktop Navigation
+
+```
+Position: Fixed top, full width
+Height: 64px
+Background: rgba(12,12,12,0.95) with backdrop-filter: blur(12px)
+Bottom border: 1px solid #2A2A2A
+
+Initial + scrolled: same — always dark, never transparent
+(Unlike lifestyle brands, Cotton Aura nav never floats over imagery —
+it's always a solid functional bar)
+
+LEFT: "COTTON AURA" — Display font, 15px, letter-spacing 0.2em, all-caps, white
+      Or custom logo lockup if available
+
+CENTER: Shop | Collections | Bestsellers | About | Bulk Orders
+
+RIGHT: [Search icon] [Wishlist icon + count] [Cart icon + count]
+
+CENTER link hover: Cotton Blue underline slides in, 0.2s
+Active page: Cotton Blue persistent underline
+
+"BULK ORDERS" link (important for reseller model):
+  Styled distinctly — Cotton Blue text, signals B2B/team orders
+  This serves clubs, teams, gyms buying in quantity
+
+ANNOUNCEMENT BAR:
+  Height: 36px
+  Background: Cotton Blue (#4A7BF7)
+  Text: DM Sans, 11px, white, letter-spacing 0.1em, all-caps
+  Content: "FREE DELIVERY ABOVE ₹999 · COD AVAILABLE · NEW DROP EVERY WEEK"
+  Marquee scroll
+  NOT dismissible — too important for conversion
+```
+
+### Mobile Navigation
+
+```
+Top bar: 56px, dark background
+  Left: Logo
+  Right: Search icon + Cart (with count badge in Cotton Blue)
+
+Menu: Full-screen overlay from left
+  Background: #141414
+  Links: Display font, 36px, all-caps, white — SHOP / COLLECTIONS / BESTSELLERS
+  Secondary: DM Sans, 14px — About / Bulk Orders / Sizing / Contact
+  Bottom: COD badge + shipping info (conversion reassurance)
+
+Bottom Nav (persistent, mobile):
+  Background: #141414, 1px top border
+  4 icons: Home | Shop | Search | Cart
+  Active: Cotton Blue dot indicator
+  Cart icon: badge with live count
+  Hides on scroll down, reveals on scroll up
+```
+
+---
+
+## PART V — HOMEPAGE ARCHITECTURE
+
+### 5.1 Hero Section
+
+```
+PURPOSE: Immediately establish: this is a gym compression brand. 
+         The body and the product are the hero — not abstract lifestyle.
+
+LAYOUT OPTION A — On-Body Product Hero (Primary):
+  Full viewport height (100dvh)
+  Subject: male model with visible physique wearing Cotton Aura compression tee
+  Shot: gym environment OR dramatic dark studio
+  The tee FIT is the message — tight, defined, intentional
+  Dark vignette overlay from edges
+
+  Text overlay — bottom left:
+    Eyebrow: DM Sans, 11px, Cotton Blue, all-caps, letter-spacing 0.15em
+      "NEW ARRIVAL — DROP 07"
+    H1: Display font, clamp(60px,10vw,140px), white, all-caps
+      "BUILT FOR
+      THE GYM."
+    Subline: DM Sans, 14px, #A0A0A0, max 8 words
+      "Compression tees that fit like a second skin."
+    CTA: "SHOP NOW" — Cotton Blue background, white text, 48px height, 4px radius
+
+LAYOUT OPTION B — Split Body + Text:
+  50% dramatic on-body product image left
+  50% dark panel right with:
+    Large display text: "FEEL EVERY
+    REP."
+    Product feature bullets (DM Sans, 13px, #A0A0A0):
+      · Second-skin compression fit
+      · 4-way stretch fabric
+      · Moisture-wicking technology
+      · Available in 8 colours
+    CTA button: "SHOP COMPRESSION TEES →"
+
+HERO COPY DIRECTION (gym-brand language):
+  WRONG: "Where elegance meets the body." (lifestyle brand — wrong)
+  WRONG: "Softness has always been the point." (completely wrong)
+
+  RIGHT: "BUILT FOR THE GYM."
+  RIGHT: "COMPRESSION THAT PERFORMS."
+  RIGHT: "FIT THAT SHOWS YOUR WORK."
+  RIGHT: "WEAR WHAT YOU'VE EARNED."
+  RIGHT: "SECOND SKIN. FIRST CHOICE."
+  RIGHT: "DEFINE YOUR PHYSIQUE."
+
+CTA: Always filled button — Cotton Blue, white text, "SHOP NOW" or "SHOP COMPRESSION"
+     Never text-only link in the hero — this audience responds to clear buttons
+
+HERO ANIMATION:
+  0.0s: Image visible immediately (no delay)
+  0.1s: Vignette fades in (0.3s)
+  0.2s: Eyebrow — opacity 0→1, translateY 8px→0, 0.4s
+  0.35s: H1 line 1 — opacity 0→1, translateY 16px→0, 0.5s
+  0.5s: H1 line 2 — same
+  0.65s: Subline — opacity 0→1, 0.35s
+  0.8s: CTA — scale(0.95)→scale(1) + opacity, 0.3s
+  Philosophy: Fast sequence — 0.9s total. Gym audience doesn't wait.
+```
+
+### 5.2 Trust / Social Proof Bar (IMMEDIATELY after hero)
+
+```
+PURPOSE: Remove doubt before it forms. COD and free shipping are huge for Indian market.
+
+LAYOUT: Full-width strip, #141414 background, 64px height
+  5 trust facts, separated by subtle 1px vertical dividers
+
+Facts (important for India market especially):
+  🚚 FREE DELIVERY ABOVE ₹999
+  💳 COD AVAILABLE
+  🔄 7-DAY EASY RETURNS
+  ⭐ 4.8★ RATED (2,400+ REVIEWS)
+  🔒 100% SECURE CHECKOUT
+
+DM Sans, 11px, white, letter-spacing 0.08em, all-caps
+Icon: 16px before each (thin SVG or emoji)
+Mobile: horizontal scroll strip
+```
+
+### 5.3 New Drop / Featured Collection
+
+```
+PURPOSE: Show the latest products immediately — this audience scrolls to shop, not to browse.
+
+LAYOUT OPTION A — 2 Large Feature Cards + Product Grid below:
+  Top: 2 side-by-side editorial product images (50% each, 60vh height)
+    Each: dramatic on-body shot, product name + "SHOP NOW" overlay on hover
+  Below: 4-column product grid
+
+LAYOUT OPTION B — Drop Campaign Banner:
+  Full-width, 80vh, campaign image (product editorial)
+  "DROP 07 — LIVE NOW" in display font, large
+  Countdown timer if pre-launch: HH:MM:SS in mono font
+  Grid of 4 drop products immediately below
+
+Section header:
+  Left: Display font, "NEW ARRIVALS" — 48px, white
+  Right: DM Sans link, "VIEW ALL →" — 13px, Cotton Blue
+  Below header: 32px gap before grid
+```
+
+### 5.4 Product Grid — Bestsellers
+
+```
+LAYOUT:
+  Desktop: 4 columns, 12px gap
+  Tablet: 3 columns, 12px gap
+  Mobile: 2 columns, 8px gap
+
+Section header: Display font, "BESTSELLERS" + "SHOP ALL →" right
+
+PRODUCT CARD SPECIFICATION:
+
+Image container:
+  Aspect ratio: 4:5 (slightly squarer than 3:4 — shows more body context)
+  Background: #141414 (dark — product pops out)
+  Border: 1px solid #2A2A2A
+  Border radius: 4px
+  Overflow: hidden
+
+Image behavior:
+  Primary: clean product on dark background OR on-body gym shot
+  Secondary (hover): on-body alternate angle OR different colour variant
+  Hover crossfade: 0.35s ease
+  Scale: scale(1.03) on hover, 0.4s — shows detail
+
+Card overlay elements:
+  Top-left: Product badge — DM Sans, 10px, all-caps
+    "NEW" — white text, Cotton Blue bg
+    "BESTSELLER" — white text, #333 bg
+    "LOW STOCK" — white text, Performance Red bg
+    "SOLD OUT" — gray text, #1C1C1C bg
+  Top-right: Wishlist heart — 36px touch target, gray → Cotton Blue on save
+  Bottom hover panel (slides up): 
+    Height: 52px, rgba(12,12,12,0.92) background
+    Content: colour dot selectors + "QUICK ADD" button (Cotton Blue)
+    Animation: translateY(100%)→0, 0.2s ease-out
+
+Card information below image:
+  Padding: 12px 0 20px 0
+  Product name: DM Sans, 14px, #F2F2F2, weight 500, 1-line clamp
+  Colour: DM Sans, 12px, #A0A0A0 — "Black / White / Navy / 5 more"
+  Price: DM Sans, 18px, white, weight 600
+  Original/sale: strikethrough #606060, sale price Cotton Blue or Performance Red
+  Star rating: 4 mini stars + "(248)" — small, right-aligned
+
+Scroll reveal: opacity 0→1 + translateY(16px)→0, 0.45s, stagger 0.06s per card
+```
+
+### 5.5 Why Cotton Aura — Differentiator Section
+
+```
+PURPOSE: For a reseller brand, trust and differentiation are critical.
+         This section answers: "Why buy from Cotton Aura vs anywhere else?"
+
+LAYOUT: #141414 background, 3–4 feature columns
+
+Section header: Display font, "WHY COTTON AURA?" — 56px, centered, white
+
+Feature columns (each):
+  Icon: Custom thin-line SVG, 40px, Cotton Blue
+  Heading: DM Sans, 16px, white, weight 600
+  Body: DM Sans, 13px, #A0A0A0, 2–3 lines
+
+Features:
+  1. "PREMIUM COMPRESSION FABRIC"
+     "High-GSM polyester-spandex blend. Holds shape after 100+ washes."
+  2. "FIT TESTED IN THE GYM"
+     "Every tee tested by actual gym-goers before it ships. No compromise on fit."
+  3. "FAST NATIONWIDE DELIVERY"
+     "Delivered in 3–5 days. COD available. Easy returns."
+  4. "PHYSIQUE-DEFINING CUT"
+     "Tapered sleeves. Contoured torso. Built to show your progress."
+
+Background: subtle dark-to-darker gradient behind section
+Spacing: 96px top and bottom
+```
+
+### 5.6 Size & Fit Guide Teaser
+
+```
+PURPOSE: Compression tees have sizing anxiety. Addressing it on the homepage builds trust.
+
+LAYOUT: Full-width, 2-column — diagram left, text right (or reversed)
+
+Left: Measurement diagram (flat illustration of tee + measurement arrows)
+      Mono font labels: CHEST / LENGTH / SLEEVE — technical, precise
+
+Right:
+  Display font: "FIND YOUR FIT." — 48px
+  DM Sans, 14px, #A0A0A0:
+    "Compression tees fit differently from regular tees.
+    Our size guide shows exact measurements — not just S/M/L.
+    When in doubt, go one size up for comfort."
+  CTA: "VIEW SIZE GUIDE →" — outlined Cotton Blue button
+
+Section background: #141414
+```
+
+### 5.7 Fabric & Technical Specs Section
+
+```
+PURPOSE: The compression tee buyer is technical — they want to know what they're wearing.
+         This section converts skeptics by speaking their language.
+
+LAYOUT: Gym Black background, 3-column spec cards
+
+Section header: Display font, "WHAT IT'S MADE OF." — 52px, white
+
+Spec cards (Mono font for numbers — signals precision):
+  Card 1: "4-WAY STRETCH FABRIC"
+           Mono specs: "88% Polyester · 12% Spandex · 200 GSM"
+           DM Sans: "Moves in every direction without resistance or stretch-out."
+  Card 2: "MOISTURE-WICKING TECHNOLOGY"
+           Mono specs: "Sweat evaporation rate: 3× faster than cotton"
+           DM Sans: "Stay dry through your hardest sets. No wet patches. No distractions."
+  Card 3: "COMPRESSION GRADIENT"
+           Mono specs: "Targeted zones: chest, torso, upper arms"
+           DM Sans: "Supports active muscle groups. Enhances blood flow. Looks incredible."
+
+Cards: #141414 bg, 1px #2A2A2A border, 4px radius, 32px internal padding
+```
+
+### 5.8 Instagram / Community Grid
+
+```
+PURPOSE: Gym audience trusts peer validation more than brand marketing.
+         Real people in real gyms wearing the product is the most powerful content.
+
+LAYOUT: 6-image grid, 3×2, no gap
+  Images: customer-submitted gym selfies + influencer content wearing Cotton Aura
+  All: square crop, slightly desaturated treatment for visual cohesion
+  Hover: overlay showing @handle + "VIEW POST" text
+
+Section header: Display font, "WORN IN THE GYM." — left-aligned
+Below header: "@thecottonaura on Instagram — tag us to be featured"
+              DM Sans, 13px, Cotton Blue
+
+Submit UGC CTA: "TAG @THECOTTONAURA →" — text link below grid
+
+Mobile: 3×2 grid preserved (square tiles at 33vw)
+```
+
+### 5.9 Reviews Strip
+
+```
+PURPOSE: Social proof for a reseller brand is non-negotiable.
+
+LAYOUT: Horizontal scroll strip of 4 review cards (OR 3 full reviews stacked)
+
+Review card:
+  Background: #141414, 1px #2A2A2A border, 4px radius
+  Stars: 5 Cotton Blue dots (or stars) — visual, not just number
+  Quote: DM Sans, 14px, #F2F2F2, max 30 words — keep it punchy
+  Attribution: DM Sans, 12px, #A0A0A0 — "Rahul M. · Verified Purchase · Delhi"
+  Product tag: small pill — "Cotton Aura Black Compression Tee · Size L"
+
+Section header: Display font, "WHAT THEY'RE SAYING." — 48px
+Average rating: "4.8 ★ from 2,400+ reviews" — DM Sans, 16px, below header
+
+Featured gym testimonials — write in authentic voice:
+  "Fits like armor. Wore it on chest day, got 3 compliments."
+  "Best compression tee I've worn. Doesn't roll up, doesn't stretch out."
+  "Finally a compression tee that fits Indian body types properly."
+  "My gym bros all asked where I got it. Now we all wear Cotton Aura."
+```
+
+### 5.10 Bulk / Team Orders Section
+
+```
+PURPOSE: Reseller model often serves teams, gyms, clubs. B2B is a real revenue channel.
+
+LAYOUT: Full-width, Cotton Blue background (rare — powerful full-color moment)
+
+Content (white text on Cotton Blue):
+  Display font, 72px: "ORDERING FOR
+  YOUR TEAM?"
+  DM Sans, 15px, rgba(255,255,255,0.8):
+    "Custom bulk orders for gyms, sports teams, and fitness clubs.
+    Minimum 10 pieces. Custom sizing. Discounted rates."
+  CTA: White background button, Cotton Blue text: "GET BULK PRICING →"
+  Secondary: "OR WHATSAPP US DIRECTLY →" with WhatsApp icon — critical for India market
+
+This section should feel energetic, not corporate — it's an invitation, not a form.
+```
+
+### 5.11 Newsletter / Drop Alerts
+
+```
+LAYOUT: Gym Black, 60vh
+  Display font: "DON'T MISS THE
+  NEXT DROP." — 72–96px, white
+
+  DM Sans, 14px, #A0A0A0:
+    "New colourways. Limited restocks. Exclusive early access."
+    "No spam — only drops."
+
+  Input: full-width max 440px, dark bg, white text, 1px #2A2A2A border, 4px radius
+  Button: Cotton Blue bg, white, "GET NOTIFIED"
+  WhatsApp option: "Or join our WhatsApp drop list →" — with icon, Cotton Blue
+  
+  IMPORTANT FOR INDIA MARKET:
+    WhatsApp is the primary communication channel for this audience.
+    Offer WhatsApp opt-in as equal or primary to email.
+    "JOIN WHATSAPP GROUP" should be a prominent secondary CTA throughout the site.
+```
+
+### 5.12 Footer
+
+```
+Background: #0A0A0A (slightly deeper than body)
+Top: 1px border #2A2A2A
+
+Row 1 — 4 columns:
+  Col 1: Brand
+    Logo + "COTTON AURA" — Display font
+    Tagline: DM Sans, 13px, #606060 — "Compression Tees. Built for the Gym."
+    Social: Instagram · YouTube · WhatsApp (icons, 20px, thin SVG)
+
+  Col 2: Shop
+    New Arrivals / Compression Tees / Bestsellers / Sale / Bulk Orders
+  
+  Col 3: Help
+    Size Guide / Shipping Info / Returns & Exchange / FAQs / Track Order / Contact
+  
+  Col 4: About
+    Our Story / Why Compression / Instagram / Affiliate Program
+
+Row 2 — Trust badges row:
+  COD badge + Secure Payment badge + Returns badge — horizontal, small icons
+
+Row 3 — Legal bar:
+  © 2026 Cotton Aura · Privacy Policy · Terms · Refund Policy
+  Payment icons: UPI / Visa / Mastercard / RuPay / PayPal / Klarna
+
+IMPORTANT: Include UPI and RuPay in payment icons — India market priority
+```
+
+---
+
+## PART VI — COLLECTION / PLP ARCHITECTURE
+
+### 6.1 Collection Page
+
+```
+URL: /collections/[slug] — e.g. /collections/compression-tees
+
+HERO (compact — 40vh, not full screen):
+  Full-width dark editorial image
+  Collection name: Display font, 8vw, all-caps, white, bottom-left
+  Product count: DM Sans, 12px, #A0A0A0, bottom-right: "24 PRODUCTS"
+  Campaign line: DM Sans, 14px, below name — "Built for every body. Every lift."
+
+FILTER & SORT BAR (sticky):
+  Height: 52px, #141414 bg, 1px bottom border
+  Filter: COLOUR | SIZE | PRICE | SORT BY
+  Each: compact dropdown, dark bg, DM Sans 13px options
+  Mobile: "FILTER" button → full-screen slide-up
+
+  COLOUR FILTER: Visual swatch grid in dropdown (not text)
+  SIZE FILTER: Button toggle (XS/S/M/L/XL/XXL) — mark if sold out
+  SORT: Newest / Bestselling / Price Low–High / Price High–Low
+
+PRODUCT GRID: Same spec as homepage grid
+  12px gap, 4-col → 3-col → 2-col
+
+BETWEEN GRID ROWS (every 8 products):
+  Full-width editorial banner — workout imagery, campaign shot
+  This keeps the grid feeling editorial, not like a catalogue
+```
+
+---
+
+## PART VII — PRODUCT DETAIL PAGE (PDP)
+
+The PDP must be the fastest path from "I want this" to "I bought this."
+Every element serves that conversion.
+
+### 7.1 Layout
+
+```
+DESKTOP: 55% gallery left (sticky) / 45% info right (scrolls)
+MOBILE: Full-width gallery → info below → sticky "ADD TO BAG" bottom bar
+```
+
+### 7.2 Media Gallery
+
+```
+Main image: Aspect 4:5, dark background, 4px radius
+  Multiple image types:
+    1. Clean product flat lay on dark surface
+    2. On-body — front, standing, lit to show muscle definition
+    3. On-body — back or side
+    4. Detail — fabric texture, stitching, collar
+    5. Fit guide overlay — measurement arrows on the product
+    6. Action shot — gym movement (if available)
+
+Gallery controls: 
+  Desktop: thumbnail strip below main image, 4–6 thumbs, 60px wide
+  Mobile: swipe with dot indicators + image count "1 / 6"
+
+Zoom: cursor magnifier on hover, pinch-to-zoom mobile
+Video: included if available — shows the fabric stretch and recovery
+```
+
+### 7.3 Product Information Panel
+
+```
+BREADCRUMB: DM Sans, 11px, #606060 — "Shop / Compression Tees / Black"
+
+SECTION A — PRODUCT IDENTITY
+  Product name: DM Sans, 22–28px, #F2F2F2, weight 600
+  SKU/code: Mono, 10px, #606060 — "CA-CT-BLK-001"
+  Category tag: small pill, Cotton Blue — "COMPRESSION TEE"
+  Rating: 4.8★ (248 reviews) — Cotton Blue stars, tappable anchor to reviews
+
+SECTION B — PRICING
+  Price: DM Sans, 24px, white, weight 700: ₹1,299
+  Original price: strikethrough #606060: ₹1,999 (if on sale)
+  Savings badge: "YOU SAVE ₹700 (35% OFF)" — Performance Red, small
+  EMI note: DM Sans, 12px, #A0A0A0 — "₹433/month with 0% EMI · Klarna/Simpl"
+  COD note: "✓ Cash on Delivery Available" — DM Sans, 12px, Cotton Blue
+
+SECTION C — COLOUR SELECTOR
+  Label: "COLOUR: [Selected]" — DM Sans, 12px, #A0A0A0
+  Swatches: 24px circles, 2px gap
+    Selected: 2px white border with 2px gap
+    Sold out: diagonal line through swatch
+  On select: gallery image cross-fades to that colour variant (0.35s)
+  All colours labeled on hover/tap
+
+SECTION D — SIZE SELECTOR
+  Label: "SIZE" — DM Sans, 12px, #A0A0A0, all-caps
+  Size guide link: "Size Guide →" — Cotton Blue, 12px
+  
+  Buttons: DM Sans, 14px, weight 500, 48px × 40px, 4px radius
+    Available: #1C1C1C bg, #A0A0A0 text, 1px #2A2A2A border
+    Hover: #2A2A2A bg, white text
+    Selected: white bg, #0C0C0C text, no border (high contrast — clear selection)
+    Sold out: #141414 bg, #3A3A3A text, strikethrough, not-allowed cursor
+  
+  COMPRESSION FIT NOTE (critical — below size buttons):
+    DM Sans, 12px, #A0A0A0 background callout box:
+    "⚠ Compression tees fit tighter than regular tees.
+    If between sizes, size UP for comfort."
+
+SECTION E — SCARCITY (conditional — honest, never fabricated)
+  Stock 10+:  Nothing shown
+  Stock 6–9:  "SELLING FAST — Only [N] left" — #A0A0A0, DM Sans, 13px
+  Stock 3–5:  "LOW STOCK — [N] left in [size]" — Performance Red, DM Sans, 13px
+  Stock 1–2:  "ALMOST GONE — Last [N] in stock!" — Performance Red, pulsing dot
+  Stock 0:    "SOLD OUT — Notify Me" — CTA to waitlist form
+
+SECTION F — CTAs (THE CONVERSION MOMENT)
+  PRIMARY: "ADD TO BAG"
+    Width: full, 56px height, 4px radius
+    Background: Cotton Blue (#4A7BF7), white DM Sans text, 14px, letter-spacing 0.08em
+    Hover: slightly brighter Cotton Blue, 0.15s
+    Click: text → "✓ ADDED TO BAG" for 1.5s → reverts, cart count increments
+
+  COD ORDER (secondary — critical for India):
+    Width: full, 48px, 4px radius
+    Background: transparent, 1px white border, white text
+    "ORDER WITH COD →"
+    — This is not an alternative checkout — it shows COD is available
+    — On click: opens cart drawer with COD note visible
+
+  WISHLIST: below CTAs — "♡ SAVE TO WISHLIST" text link, #A0A0A0
+
+SECTION G — TRUST SIGNALS (directly below CTAs — conversion-critical placement)
+  3 rows, DM Sans, 13px, #A0A0A0:
+  ✓ Free delivery above ₹999 (Standard 3–5 days)
+  ✓ Easy 7-day returns & exchange
+  ✓ 100% authentic — quality tested before shipping
+
+SECTION H — PRODUCT DETAILS (accordions)
+  
+  PRODUCT SPECS (use Mono font for technical data):
+    Material: 88% Polyester, 12% Spandex
+    Weight: 200 GSM
+    Stretch: 4-Way Stretch
+    Technology: Moisture-Wicking · Anti-Odor · Anti-Pilling
+    Fit: Compression (2nd Skin)
+    Neckline: Crew Neck / V-Neck (model-specific)
+    Care: Machine Wash Cold / Do Not Tumble Dry
+
+  SIZE & FIT GUIDE:
+    Measurement table: Chest / Waist / Length / Sleeve — cm + inches
+    Compression sizing note (expanded version)
+    Model info: "Model is 5'11", 78kg, wearing Size L"
+
+  SHIPPING & RETURNS:
+    Delivery times by location
+    COD terms (India specific)
+    Return process (step by step — 3 steps max)
+
+  CUSTOMER REVIEWS: (inline — first 3 shown, load more below)
+    Rating breakdown bar chart
+    Filter: size, verified, photos
+    Each review: Stars, name, date, text, photo (if uploaded), "Helpful?" vote
+```
+
+### 7.4 Below-Fold PDP Sections
+
+```
+COMPLETE THE LOOK (2 products):
+  Header: "PAIR IT WITH" — Display font, 32px
+  2 product cards, compact horizontal, quick-add
+
+YOU MAY ALSO LIKE (4 products):
+  Standard grid cards
+
+ALL REVIEWS (expanded from inline above):
+  Full review section with photo grid, filter, pagination
+  "WRITE A REVIEW" CTA — prominent, Cotton Blue
+```
+
+---
+
+## PART VIII — CART & CHECKOUT
+
+### 8.1 Cart Drawer
+
+```
+Slide from right, 440px desktop / full mobile
+Background: #141414
+Animation: translateX(100%)→0, 0.3s ease-out
+Backdrop: rgba(0,0,0,0.6)
+
+HEADER: "YOUR BAG ([N] items)" — DM Sans, 16px, weight 600, white + X close
+
+LINE ITEMS:
+  Thumbnail: 72×90px (4:5), dark bg
+  Name: DM Sans, 14px, #F2F2F2
+  Size + Colour: DM Sans, 12px, #A0A0A0
+  Qty stepper: − [N] + (compact, 1px border, 4px radius)
+  Price: DM Sans, 15px, white, right
+  Remove: "×" icon, #606060
+
+CART SUMMARY:
+  Subtotal: DM Sans, 16px, white
+  Free shipping progress:
+    Track: #2A2A2A, 4px height
+    Fill: Cotton Blue — animates to show progress
+    Text: "₹[X] away from free shipping" — DM Sans, 12px, #A0A0A0
+  COD note if selected: "Cash on Delivery selected" — DM Sans, 12px, Cotton Blue
+
+CHECKOUT OPTIONS (important for India — multiple checkout methods):
+  "CHECKOUT ONLINE →" — Cotton Blue, full-width, 52px
+  "CHECKOUT WITH COD →" — white outline, full-width, 44px
+  (Two equal options — not hierarchy — both valid payment paths)
+
+Cross-sell: "CUSTOMERS ALSO BOUGHT" — 2 compact product cards below checkout
+```
+
+### 8.2 Checkout Page
+
+```
+Single page multi-step OR Shopify checkout (if on Shopify)
+Background: #0C0C0C
+Max-width: 1000px
+
+LEFT (form, 60%):
+  CONTACT: Phone number (primary for India — SMS OTP preferred) + Email
+  DELIVERY: Full name, Address Line 1, Line 2, City, State, Pincode, Country
+  SHIPPING OPTIONS:
+    Standard (3–5 days) — Free above ₹999, else ₹99
+    Express (1–2 days) — ₹199
+  PAYMENT:
+    UPI (primary — show first for India)
+    Credit/Debit Card (Stripe or Razorpay)
+    Net Banking
+    COD (Cash on Delivery)
+    EMI options (Simpl / Lazypay / Bajaj Finserv)
+    International: PayPal / Stripe
+
+RIGHT (order summary, 40%, sticky):
+  Product thumbnails + quantities
+  Subtotal + shipping + total
+  Promo code input
+  COD charge note if applicable (₹50 COD fee transparent disclosure)
+
+PLACE ORDER BUTTON: Full-width, 60px, Cotton Blue
+  "PLACE ORDER — ₹[TOTAL]"
+  Below: "Your data is secured by 256-bit SSL encryption"
+
+FORM RULES:
+  All inputs: 52px height (prevents iOS zoom)
+  Inline validation on blur
+  Phone OTP verification flow (India standard UX expectation)
+  Auto-fill: Google autocomplete for addresses
+```
+
+---
+
+## PART IX — MOTION DESIGN SYSTEM
+
+### 9.1 Philosophy
+
+```
+Cotton Aura moves like a gym workout — purposeful, efficient, with power.
+Not slow and meditative. Not flashy and gratuitous.
+Fast entrances. Clean holds. No lingering.
+```
+
+### 9.2 Specifications
+
+```
+TIMING:
+  Micro (icon state):         150ms
+  UI state changes:           200ms
+  Cart/drawer enter:          300ms ease-out
+  Content scroll reveal:      450–550ms ease-out
+  Hero entrance sequence:     800ms total
+  Stagger per card:           0.05s
+
+EASING: cubic-bezier(0.16, 1, 0.3, 1) for entrances — fast, decisive
+        ease-in for exits — quick departure
+
+SCROLL-TRIGGERED:
+  Products: translateY(20px)→0 + opacity, 0.45s, stagger 0.05s
+  Section headers: translateY(16px)→0 + opacity, 0.5s
+  Features/specs: same as products
+
+HOVER:
+  Product card: scale(1.03), 0.35s — shows definition
+  Quick add panel: translateY(100%)→0, 0.2s
+  CTA buttons: brightness +8%, 0.15s
+  Nav links: Cotton Blue underline scaleX(0→1), 0.2s
+
+WHAT TO AVOID:
+  — Animations over 600ms for UI (too slow for this audience)
+  — Bouncing or spring physics (feels wrong for a gym brand)
+  — Page transitions — instant navigation preferred
+  — Parallax (mobile performance cost not worth it)
+  — Rotation on product images
+  — Pulsing elements except urgency dots (scarcity signals)
+
+prefers-reduced-motion: opacity transitions only, 150ms
+```
+
+---
+
+## PART X — COPYWRITING SYSTEM
+
+### 10.1 Brand Voice
+
+```
+WHO IS SPEAKING:
+  Cotton Aura speaks like a gym-savvy friend who knows his gear —
+  not a salesman, not a corporate brand. Direct, honest, technically aware.
+  Uses gym-culture language naturally, not performatively.
+
+VOICE CHARACTERISTICS:
+  — Direct and confident — no hedging
+  — Body-positive within athletic context — celebrates progress, not perfection
+  — Technical when needed — GSM, stretch rating, compression zones
+  — Short sentences — gym audience reads fast and scrolls faster
+  — Numbers and specifics: "200 GSM" not "high quality fabric"
+  — Gym culture fluency: "your best set", "every rep", "the mirror test"
+
+WRONG COPY:
+  "Elevate your wardrobe with our premium collection." (lifestyle brand wrong)
+  "Explore the world of Cotton Aura." (too vague)
+  "Experience softness like never before." (wrong product altogether)
+
+RIGHT COPY:
+  "Built for the gym. Built for the mirror."
+  "Compression that moves with you — not against you."
+  "200 GSM. 4-way stretch. Zero compromise."
+  "Your best set deserves better than a regular tee."
+  "Fits like a second skin. Performs like armor."
+  "Wear what you've earned."
+  "Define the physique. Not just the fit."
+```
+
+### 10.2 Copy by Page Section
+
+```
+HERO: "BUILT FOR THE GYM." / "SECOND SKIN. FIRST CHOICE." / "DEFINE YOUR PHYSIQUE."
+PRODUCT NAMES: [Colour] Compression Tee — e.g. "Black Compression Tee" / "Navy Compression Tee"
+PRODUCT DESCRIPTION (3–4 sentences, technical + aspirational):
+  "200 GSM polyester-spandex blend — compression that holds without restricting.
+  4-way stretch fabric moves through every exercise pattern without riding up.
+  Tapered cut through the chest and torso — built to show your progress.
+  Available in 8 colours. Delivered in 3–5 days."
+
+SCARCITY: "ONLY 3 LEFT" / "SELLING FAST" / "RESTOCKING SOON — NOTIFY ME"
+CTA: "ADD TO BAG" / "SHOP NOW" / "SHOP COMPRESSION" / "GET NOTIFIED"
+REVIEWS SECTION: "WHAT THEY'RE SAYING." / "WORN & RATED."
+404 PAGE: Display font: "WRONG TURN." DM Sans: "Back to the gym floor."
+SIZING: "FIND YOUR FIT." / "GET THE RIGHT COMPRESSION — NOT JUST THE RIGHT SIZE."
+```
+
+---
+
+## PART XI — SIZE GUIDE PAGE (/sizing)
+
+```
+CRITICAL PAGE for compression tees — sizing anxiety is the #1 reason for
+abandoned carts and returns in this product category.
+
+SECTIONS:
+1. Hero: Display font, "FIND YOUR FIT." — with measuring tape visual
+2. How to measure: 3-step illustrated guide (chest, waist, length)
+3. Size chart: Table in Mono font — chest / waist / length per size (cm + inches)
+4. Compression fit explainer:
+   "Compression tees are designed to fit tighter than regular tees.
+   This is intentional — the compression supports your muscles and enhances definition.
+   Rule: if you're between sizes, go UP one size for comfort.
+   If you want maximum compression, stay true to size."
+5. Body type guide: "Broader shoulders?" / "Longer torso?" / "More chest?" — fit advice
+6. Chat/WhatsApp CTA: "STILL NOT SURE? CHAT WITH US →" — WhatsApp icon
+```
+
+---
+
+## PART XII — PERFORMANCE RULES
+
+### 12.1 Core Targets
+
+```
+LCP:   ≤ 2.0s (gym audience on mobile 4G — realistic target)
+CLS:   ≤ 0.05
+INP:   ≤ 100ms
+Mobile PageSpeed: ≥ 82 (accounting for India mobile network conditions)
+Desktop PageSpeed: ≥ 92
+```
+
+### 12.2 Technical Rules
+
+```
+IMAGES:
+  Format: WebP primary, JPEG fallback
+  Products: max 400KB per image (India mobile data sensitivity)
+  Hero: max 1.2MB, fetchpriority="high"
+  Thumbnails: max 80KB
+  All: srcset 400w/800w/1200w/1600w
+  All: explicit width + height (prevents CLS)
+  Lazy load: everything below fold
+
+INDIA-SPECIFIC PERFORMANCE:
+  Prioritize performance on mobile 4G connections
+  Avoid heavy JS frameworks — keep bundle lean
+  Consider lite/low-data mode for 2G/3G users (reduced image quality)
+  WhatsApp integration: use lightweight web WhatsApp API, not heavy SDK
+
+FONTS:
+  Self-host — no Google Fonts at runtime
+  font-display: swap
+  Preload: display font + body font
+
+JAVASCRIPT:
+  No render-blocking above fold
+  Cart drawer, search, wishlist: dynamic imports (load on demand)
+  Bundle target: < 150KB gzipped
+  Razorpay / payment SDKs: load only at checkout
+
+MOBILE:
+  All inputs: 16px minimum font-size (prevents iOS zoom)
+  Touch targets: 44px minimum
+  Swipe gestures on gallery and cart line items
+  Bottom sticky nav persistent
+  PDP sticky "ADD TO BAG" bar always visible
+```
+
+---
+
+## PART XIII — INDIA MARKET SPECIFIC REQUIREMENTS
+
+These are non-negotiable for the Cotton Aura target market:
+
+```
+PAYMENT:
+  UPI (PhonePe / Google Pay / Paytm) — show FIRST in payment options
+  RuPay cards — include in payment icons
+  COD (Cash on Delivery) — prominent throughout the experience
+  EMI options — Simpl / Lazypay / Bajaj Finserv / bank EMI
+  International: Stripe / PayPal for diaspora buyers
+
+COMMUNICATION:
+  WhatsApp as primary customer support channel (NOT just email)
+  "CHAT ON WHATSAPP" button: available on contact, PDP, cart, size guide
+  WhatsApp number visible in footer + contact page
+  Consider WhatsApp drop alert opt-in alongside email
+
+TRUST SIGNALS (India-specific):
+  "100% Original Product" — Indian market is sensitive to fakes
+  "Easy Returns" — with clear process, not just policy
+  "COD Available" — repeated across multiple touchpoints
+  "Delivered in 3–5 Days" — specific, not vague
+  Customer photos (UGC) from real Indian gym-goers
+
+SHIPPING:
+  Show delivery estimate by pincode lookup on PDP and cart
+  "Delivered by [date]" — specific, not a range
+  COD charge disclosure: if ₹50 COD fee, show BEFORE checkout
+
+LANGUAGE:
+  English primary — but Hindi product names or descriptions can be used
+  for category sections (e.g. "अपना साइज़ चुनें") — optional, audience-dependent
+```
+
+---
+
+## PART XIV — COMPONENT SYSTEM
+
+```
+GLOBAL:
+  AnnouncementBar         — non-dismissible, marquee, Cotton Blue
+  NavigationDesktop       — always dark, sticky, logo + links + icons
+  NavigationMobile        — slide-over + bottom tab bar
+  SearchOverlay           — full screen, instant results
+  CartDrawer              — slide-over with COD option
+  PreloaderScreen         — fast, branded, performance bar
+  CookieBanner            — GDPR/minimal
+  WhatsAppWidget          — floating WhatsApp CTA (bottom right, persistent)
+
+PRODUCT:
+  ProductCard             — all states (default, hover, sold, low stock, new)
+  ProductCardCompact      — cross-sell, cart upsell
+  ProductGrid             — responsive, skeleton loading, editorial breaks
+  ProductGallery          — swipeable, zoom, video support
+  ProductInfoPanel        — full sticky PDP right column
+  ColourSelector          — swatches with cross-fade
+  SizeSelector            — all states, compression note
+  ScarcitySignal          — conditional, honest stock display
+  QuickAddPanel           — hover slide-up on cards
+  SizeGuideModal          — measurement table + compression advice
+
+COMMERCE:
+  CartLineItem            — standard + COD variant
+  CheckoutForm            — India-first payment order
+  PaymentMethodSelector   — UPI first, COD prominent
+  PincodeDeliveryCheck    — delivery date by postcode
+  ShippingProgress        — free shipping threshold bar
+  PromoCodeInput          — collapse/expand
+
+UTILITY:
+  Button                  — primary (Cotton Blue) / secondary (outline) / text
+  Badge                   — new / bestseller / low stock / sold
+  Accordion               — product specs + FAQ
+  Modal                   — size guide / quick view
+  Drawer                  — cart + mobile menu
+  Skeleton                — product card loading state
+  StarRating              — Cotton Blue star display
+  ReviewCard              — verified purchase + photo support
+  ProgressBar             — shipping threshold fill
+  WhatsAppButton          — floating + inline variants
+  UPIBadge                — payment method display
+  CODBadge                — COD availability indicator
+```
+
+---
+
+## PART XV — FINAL DIRECTIVES
+
+```
+THIS SITE SERVES ONE CUSTOMER:
+  A 22-year-old who trains 5 days a week, buys gym wear on his phone
+  between sets, shares finds with his gym group on WhatsApp, and makes
+  purchase decisions based on: "Will this make me look good in the gym?"
+
+  If the site doesn't answer YES within 3 seconds of landing,
+  rebuild until it does.
+
+THE THREE CONVERSION QUESTIONS:
+  Every page must answer these without the customer having to ask:
+  1. "Will this fit my body the right way?" → Size guide, compression note, on-body photos
+  2. "Is this brand legit?" → Reviews, UGC, social proof, fast delivery, COD
+  3. "How do I get it?" → Clear add to bag, COD option, fast checkout
+
+WHAT THIS BRAND IS NOT (and must never look like):
+  — A soft, slow, linen lifestyle brand
+  — A corporate multinational sports brand
+  — A dropshipping store with no personality
+  — A luxury fashion house
+
+WHAT THIS BRAND IS:
+  — A gym-first compression tee brand that understands its customer
+  — A community of people who take their training seriously
+  — A store that makes it easy to buy, easy to trust, and easy to return
+  — A brand worth posting about on Instagram
+
+BUILD IT LIKE THE CUSTOMER IS WATCHING.
+BECAUSE THEY ARE.
+```
+
+---
+
+*Cotton Aura (@thecottonaura) — Master System Prompt v2.0*
+*Compression Tees · Gym Performance · Reseller D2C*
+*Rebuilt from real brand identity — not assumed aesthetics*
+*For AI coding models, frontend engineers, and e-commerce strategists*
+*India market first. Conversion always.*

@@ -68,8 +68,8 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               objectFit: 'cover',
               position: 'absolute', inset: 0,
             }}
-            animate={{ opacity: hovered ? 0 : 1, scale: hovered ? 1.03 : 1 }}
-            transition={{ duration: 0.35, ease: 'easeInOut' }}
+            animate={{ opacity: hovered ? 0 : 1, scale: hovered ? 1.02 : 1 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           />
           {/* Hover Image */}
           <motion.img
@@ -80,24 +80,25 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               objectFit: 'cover',
               position: 'absolute', inset: 0,
             }}
-            animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1.03 : 1 }}
-            transition={{ duration: 0.35, ease: 'easeInOut' }}
+            animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1.02 : 1 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           />
 
           {/* Badge */}
           {product.badge && (
             <div
-              className="absolute top-3 left-3"
+              className="absolute top-4 left-4"
               style={{
-                padding: '3px 8px',
-                borderRadius: '4px',
+                padding: '4px 10px',
+                borderRadius: '2px',
                 backgroundColor: BADGE_STYLES[product.badge].bg,
                 color: BADGE_STYLES[product.badge].color,
                 fontFamily: 'DM Sans, sans-serif',
-                fontSize: '10px',
-                letterSpacing: '0.04em',
+                fontSize: '9px',
+                letterSpacing: '0.12em',
                 textTransform: 'uppercase',
                 fontWeight: 600,
+                boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
               }}
             >
               {product.badge}

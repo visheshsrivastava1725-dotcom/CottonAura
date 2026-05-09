@@ -37,7 +37,7 @@ export function HomePage() {
             className="absolute inset-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.1, duration: 0.3 }}
+            transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             style={{
               background: 'radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.7) 100%), linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 40%, rgba(0,0,0,0.8) 100%)',
             }}
@@ -47,9 +47,9 @@ export function HomePage() {
         {/* Hero Text */}
         <div className="absolute bottom-16 left-6 md:left-16 max-w-xl">
           <motion.p
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 8 }}
-            transition={{ delay: 0.2, duration: 0.4 }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 12 }}
+            transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '11px',
@@ -62,9 +62,9 @@ export function HomePage() {
             NEW ARRIVAL — DROP 07
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 16 }}
-            transition={{ delay: 0.35, duration: 0.5 }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 24 }}
+            transition={{ delay: 0.35, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: 'clamp(60px, 10vw, 140px)',
@@ -82,7 +82,7 @@ export function HomePage() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: loaded ? 1 : 0 }}
-            transition={{ delay: 0.65, duration: 0.35 }}
+            transition={{ delay: 0.8, duration: 1, ease: 'easeOut' }}
             style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
@@ -306,10 +306,10 @@ export function HomePage() {
       >
         <div className="max-w-[1400px] mx-auto px-6">
           <motion.h2
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="text-center mb-16"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',

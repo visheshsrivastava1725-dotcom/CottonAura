@@ -250,6 +250,19 @@ export function ProductPage() {
               <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#606060', marginBottom: '8px' }}>
                 {product.sku}
               </p>
+              <p
+                style={{
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '13px',
+                  color: '#A0A0A0',
+                  fontStyle: 'italic',
+                  lineHeight: 1.6,
+                  marginTop: '12px',
+                  maxWidth: '90%',
+                }}
+              >
+                Engineered for the elite. Sculpted for the gym. A second-skin compression that holds without restriction.
+              </p>
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
@@ -328,12 +341,27 @@ export function ProductPage() {
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#A0A0A0', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                   SIZE
                 </p>
-                <Link
-                  to="/sizing"
-                  style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#4A7BF7', textDecoration: 'none' }}
-                >
-                  Size Guide →
-                </Link>
+                <div className="flex items-center gap-4">
+                  <span
+                    style={{
+                      fontFamily: 'DM Sans, sans-serif',
+                      fontSize: '11px',
+                      color: '#4A7BF7',
+                      backgroundColor: 'rgba(74, 123, 247, 0.1)',
+                      padding: '2px 8px',
+                      borderRadius: '100px',
+                      fontWeight: 500,
+                    }}
+                  >
+                    ✓ TRUE TO SIZE
+                  </span>
+                  <Link
+                    to="/sizing"
+                    style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#4A7BF7', textDecoration: 'none' }}
+                  >
+                    Size Guide →
+                  </Link>
+                </div>
               </div>
               <div className="flex flex-wrap gap-2 mb-3">
                 {product.sizes.map(({ size, stock }) => {
@@ -491,17 +519,23 @@ export function ProductPage() {
 
             {/* Section G — Trust Signals */}
             <div
-              className="flex flex-col gap-2 p-4 rounded"
+              className="grid grid-cols-3 gap-2 p-6 rounded"
               style={{ backgroundColor: '#141414', border: '1px solid #2A2A2A', marginBottom: '24px' }}
             >
               {[
-                '✓ Free delivery above ₹999 (Standard 3–5 days)',
-                '✓ Easy 7-day returns & exchange',
-                '✓ 100% authentic — quality tested before shipping',
+                { icon: '🚚', title: 'Carbon Neutral', desc: 'Shipping' },
+                { icon: '🔒', title: 'Secure', desc: '256-bit SSL' },
+                { icon: '🧵', title: 'Elite', desc: 'Fabric Prep' },
               ].map(item => (
-                <p key={item} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#A0A0A0' }}>
-                  {item}
-                </p>
+                <div key={item.title} className="text-center">
+                  <div style={{ fontSize: '16px', marginBottom: '4px' }}>{item.icon}</div>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '10px', color: '#F2F2F2', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                    {item.title}
+                  </p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '9px', color: '#606060', textTransform: 'uppercase' }}>
+                    {item.desc}
+                  </p>
+                </div>
               ))}
             </div>
 

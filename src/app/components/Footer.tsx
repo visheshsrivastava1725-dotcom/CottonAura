@@ -29,11 +29,13 @@ export function Footer() {
                 lineHeight: 1.6,
               }}
             >
-              Budget Compression Tees. Priced for Lucknow.
+              Budget Compression Tees. Lucknow's Best.
+              <br />
+              Muscle-Hug Fit. Sweat-Hiding.
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com/thecottonaura"
+                href="https://instagram.com/cootenaura"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#606060' }}
@@ -76,7 +78,7 @@ export function Footer() {
               Shop
             </h4>
             <div className="flex flex-col gap-3">
-              {['New Arrivals', 'Compression Tees', 'Bestsellers', 'Sale', 'Bulk Orders'].map(item => (
+              {['Season 1 Drop', 'Compression Tees', 'Men Only', 'Budget Deals', 'Bulk (Gyms)'].map(item => (
                 <Link
                   key={item}
                   to="/collections/compression-tees"
@@ -110,7 +112,7 @@ export function Footer() {
               Help
             </h4>
             <div className="flex flex-col gap-3">
-              {['Size Guide', 'Shipping Info', 'Returns & Exchange', 'FAQs', 'Track Order', 'Contact'].map(item => (
+              {['Size Guide', 'Lucknow Delivery', 'Returns & Exchange', 'FAQs', 'Track Order', 'Contact'].map(item => (
                 <Link
                   key={item}
                   to={item === 'Size Guide' ? '/sizing' : '/'}
@@ -144,7 +146,7 @@ export function Footer() {
               About
             </h4>
             <div className="flex flex-col gap-3">
-              {['Our Story', 'Why Compression', 'Instagram', 'Affiliate Program'].map(item => (
+              {['Lucknow Hustle', 'Why Cooten Aura', 'Instagram', 'Affiliate'].map(item => (
                 <Link
                   key={item}
                   to="/"
@@ -170,9 +172,9 @@ export function Footer() {
         >
           {[
             { icon: '💳', label: 'COD Available' },
-            { icon: '🔒', label: '100% Secure Checkout' },
+            { icon: '🔒', label: 'Secure Payment' },
             { icon: '🔄', label: '7-Day Returns' },
-            { icon: '🚚', label: 'Free Delivery ₹999+' },
+            { icon: '🚚', label: 'Free Delivery Lucknow+' },
             { icon: '✓', label: '100% Authentic' },
           ].map(badge => (
             <div key={badge.label} className="flex items-center gap-2">
@@ -201,7 +203,7 @@ export function Footer() {
               color: '#606060',
             }}
           >
-            © 2026 Cooten Aura · Lucknow, UP · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Privacy Policy</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Terms</a>
+            © 2026 Cooten Aura · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Privacy Policy</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Terms</a> · <a href="#" style={{ color: '#606060', textDecoration: 'none' }}>Refund Policy</a>
           </p>
           <div className="flex items-center gap-3">
             {['UPI', 'RuPay', 'Visa', 'Mastercard', 'PayPal'].map(method => (

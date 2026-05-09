@@ -6,7 +6,7 @@ export function WhatsAppWidget() {
   const [open, setOpen] = useState(false);
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/919999999999?text=Hi%20Cotton%20Aura!%20I%20need%20help%20with%20my%20order.', '_blank');
+    window.open('https://wa.me/919999999999?text=Hi%20Cooten Aura!%20I%20need%20help%20with%20my%20order.', '_blank');
   };
 
   return (

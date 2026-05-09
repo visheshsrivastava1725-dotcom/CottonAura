@@ -132,7 +132,7 @@ export function CollectionPage() {
               style={{
                 width: '18px', height: '18px',
                 borderRadius: '50%',
-                backgroundColor: '#4A7BF7',
+                backgroundColor: '#4169E1',
                 color: '#fff',
                 fontSize: '10px',
                 display: 'flex',
@@ -154,8 +154,8 @@ export function CollectionPage() {
               style={{
                 padding: '4px 10px',
                 borderRadius: '4px',
-                border: `1px solid ${selectedSizes.includes(size) ? '#4A7BF7' : '#2A2A2A'}`,
-                backgroundColor: selectedSizes.includes(size) ? '#4A7BF7' : 'transparent',
+                border: `1px solid ${selectedSizes.includes(size) ? '#4169E1' : '#2A2A2A'}`,
+                backgroundColor: selectedSizes.includes(size) ? '#4169E1' : 'transparent',
                 color: selectedSizes.includes(size) ? '#fff' : '#A0A0A0',
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '12px',
@@ -210,7 +210,7 @@ export function CollectionPage() {
               onClick={() => { setSelectedSizes([]); setSelectedColors([]); }}
               style={{
                 marginTop: '16px',
-                color: '#4A7BF7',
+                color: '#4169E1',
                 background: 'none',
                 border: 'none',
                 fontFamily: 'DM Sans, sans-serif',

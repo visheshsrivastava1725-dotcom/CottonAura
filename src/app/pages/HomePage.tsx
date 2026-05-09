@@ -28,9 +28,9 @@ export function HomePage() {
         <div className="absolute inset-0 overflow-hidden">
           <img
             src={HERO_IMAGE}
-            alt="Cotton Aura Hero"
+            alt="Cooten Aura Hero"
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 30%' }}
+            style={{ objectPosition: 'center 25%' }}
           />
           {/* Vignette */}
           <motion.div
@@ -45,82 +45,111 @@ export function HomePage() {
         </div>
 
         {/* Hero Text */}
-        <div className="absolute bottom-16 left-6 md:left-16 max-w-xl">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 12 }}
+        <div className="absolute bottom-[10%] left-6 md:bottom-[12%] md:left-20 max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, x: -12 }}
+            animate={{ opacity: loaded ? 1 : 0, x: loaded ? 0 : -12 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            style={{
-              fontFamily: 'DM Sans, sans-serif',
-              fontSize: '11px',
-              color: '#0055FF',
-              letterSpacing: '0.15em',
-              textTransform: 'uppercase',
-              marginBottom: '12px',
-            }}
+            className="flex items-center gap-3 mb-6"
           >
-            LAUNCH SEASON 1 — PRICED FOR LUCKNOW
-          </motion.p>
+            <div style={{ width: '40px', height: '1px', backgroundColor: '#4169E1' }} />
+            <span
+              style={{
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '11px',
+                color: '#4169E1',
+                letterSpacing: '0.3em',
+                textTransform: 'uppercase',
+                fontWeight: 700,
+              }}
+            >
+              LAUNCH SEASON 01
+            </span>
+          </motion.div>
+          
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 24 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 30 }}
             transition={{ delay: 0.35, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
-              fontSize: 'clamp(60px, 10vw, 140px)',
+              fontSize: 'clamp(44px, 9vw, 92px)',
               color: '#F2F2F2',
               lineHeight: 0.9,
-              letterSpacing: '-0.01em',
+              letterSpacing: '0.01em',
               textTransform: 'uppercase',
-              marginBottom: '16px',
+              marginBottom: '24px',
+              textShadow: '0 10px 40px rgba(0,0,0,0.4)',
             }}
           >
-            COOTEN AURA –
-            <br />
             BUDGET COMPRESSION
             <br />
-            TEES, LUCKNOW.
+            <span style={{ color: '#4169E1' }}>BUILT FOR LUCKNOW.</span>
           </motion.h1>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: loaded ? 1 : 0 }}
             transition={{ delay: 0.8, duration: 1, ease: 'easeOut' }}
             style={{
               fontFamily: 'DM Sans, sans-serif',
-              fontSize: '14px',
+              fontSize: '15px',
               color: '#A0A0A0',
-              marginBottom: '28px',
+              marginBottom: '32px',
+              maxWidth: '480px',
+              lineHeight: 1.6,
             }}
           >
-            Sweat-hiding. Photo-ready. Budget-friendly.
+            Muscle-hug fit. 200 GSM sweat-hiding fabric. 
+            <br className="hidden md:block" />
+            Premium performance, priced for the Lucknow hustle.
           </motion.p>
+
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: loaded ? 1 : 0, scale: loaded ? 1 : 0.95 }}
             transition={{ delay: 0.8, duration: 0.3 }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-4"
           >
             <Link
               to="/collections/compression-tees"
-              className="flex items-center gap-2 transition-all hover:brightness-110"
+              className="flex items-center gap-2 transition-all hover:brightness-110 active:scale-[0.98]"
               style={{
-                height: '48px',
-                padding: '0 28px',
-                backgroundColor: '#0055FF',
+                height: '52px',
+                padding: '0 32px',
+                backgroundColor: '#4169E1',
                 borderRadius: '4px',
                 color: '#fff',
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '13px',
-                letterSpacing: '0.08em',
+                letterSpacing: '0.1em',
                 textTransform: 'uppercase',
                 textDecoration: 'none',
                 fontWeight: 600,
                 display: 'inline-flex',
                 alignItems: 'center',
+                boxShadow: '0 4px 20px rgba(65, 105, 225, 0.3)',
               }}
             >
-              PRICED FOR LUCKNOW
-              <ArrowRight size={14} style={{ marginLeft: '6px' }} />
+              EXPLORE DROPS
+              <ArrowRight size={15} style={{ marginLeft: '8px' }} />
+            </Link>
+            <Link
+              to="/sizing"
+              style={{
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '12px',
+                color: '#F2F2F2',
+                textDecoration: 'none',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                fontWeight: 500,
+                borderBottom: '1px solid #4169E1',
+                paddingBottom: '2px',
+              }}
+              className="hover:text-white transition-colors"
+            >
+              SIZE GUIDE
             </Link>
           </motion.div>
         </div>
@@ -172,7 +201,7 @@ export function HomePage() {
               textTransform: 'uppercase',
             }}
           >
-            NEW DROPS
+            LUCKNOW'S BEST
           </h2>
           <Link
             to="/collections/compression-tees"
@@ -180,7 +209,7 @@ export function HomePage() {
             style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '13px',
-              color: '#0055FF',
+              color: '#4169E1',
               textDecoration: 'none',
               letterSpacing: '0.04em',
             }}
@@ -216,7 +245,7 @@ export function HomePage() {
                     style={{
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '11px',
-                      color: '#0055FF',
+                      color: '#4169E1',
                       letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       marginBottom: '4px',
@@ -232,7 +261,7 @@ export function HomePage() {
                       letterSpacing: '0.05em',
                     }}
                   >
-                    {i === 0 ? 'COMPRESSION TEES' : 'COMPRESSION VESTS'}
+                    {i === 0 ? 'MUSCLE-HUG FIT' : 'GYM TO STREET'}
                   </p>
                 </div>
                 <span
@@ -241,7 +270,7 @@ export function HomePage() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '12px',
                     color: '#fff',
-                    backgroundColor: '#0055FF',
+                    backgroundColor: '#4169E1',
                     padding: '8px 16px',
                     borderRadius: '4px',
                     letterSpacing: '0.06em',
@@ -279,7 +308,7 @@ export function HomePage() {
                 textTransform: 'uppercase',
               }}
             >
-              MEN ONLY
+              MEN ONLY BESTSELLERS
             </h2>
             <Link
               to="/collections/compression-tees"
@@ -287,7 +316,7 @@ export function HomePage() {
               style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '13px',
-                color: '#0055FF',
+                color: '#4169E1',
                 textDecoration: 'none',
               }}
             >
@@ -302,7 +331,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* ===== WHY COTTON AURA ===== */}
+      {/* ===== WHY COOTEN AURA ===== */}
       <section
         style={{ backgroundColor: '#141414', padding: '96px 0' }}
       >
@@ -321,7 +350,7 @@ export function HomePage() {
               textTransform: 'uppercase',
             }}
           >
-            WHY COOTEN AURA?
+            THE COOTEN AURA EDGE
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
@@ -400,7 +429,7 @@ export function HomePage() {
               textTransform: 'uppercase',
             }}
           >
-            WHAT IT'S MADE OF.
+            PERFORMANCE SPECS.
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
@@ -437,7 +466,7 @@ export function HomePage() {
                   style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '14px',
-                    color: '#0055FF',
+                    color: '#4169E1',
                     fontWeight: 600,
                     letterSpacing: '0.06em',
                     textTransform: 'uppercase',
@@ -499,10 +528,10 @@ export function HomePage() {
                   />
                   <path d="M40 20 Q60 35 80 20" stroke="#2A2A2A" strokeWidth="1.5" fill="none" />
                   {/* Measurement arrows */}
-                  <line x1="130" y1="20" x2="130" y2="150" stroke="#0055FF" strokeWidth="1" strokeDasharray="3,3" />
-                  <line x1="25" y1="160" x2="95" y2="160" stroke="#0055FF" strokeWidth="1" strokeDasharray="3,3" />
-                  <text x="135" y="90" fill="#0055FF" fontSize="7" fontFamily="Space Mono">LENGTH</text>
-                  <text x="50" y="172" fill="#0055FF" fontSize="7" fontFamily="Space Mono">CHEST</text>
+                  <line x1="130" y1="20" x2="130" y2="150" stroke="#4169E1" strokeWidth="1" strokeDasharray="3,3" />
+                  <line x1="25" y1="160" x2="95" y2="160" stroke="#4169E1" strokeWidth="1" strokeDasharray="3,3" />
+                  <text x="135" y="90" fill="#4169E1" fontSize="7" fontFamily="Space Mono">LENGTH</text>
+                  <text x="50" y="172" fill="#4169E1" fontSize="7" fontFamily="Space Mono">CHEST</text>
                 </svg>
               </div>
             </div>
@@ -544,9 +573,9 @@ export function HomePage() {
                 className="inline-flex items-center gap-2 transition-all hover:gap-3"
                 style={{
                   padding: '12px 24px',
-                  border: '1px solid #0055FF',
+                  border: '1px solid #4169E1',
                   borderRadius: '4px',
-                  color: '#0055FF',
+                  color: '#4169E1',
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '13px',
                   letterSpacing: '0.08em',
@@ -583,7 +612,7 @@ export function HomePage() {
                 style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '13px',
-                  color: '#0055FF',
+                  color: '#4169E1',
                 }}
               >
                 @cootenaura on Instagram — tag us to be featured
@@ -625,7 +654,7 @@ export function HomePage() {
               style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '13px',
-                color: '#0055FF',
+                color: '#4169E1',
                 textDecoration: 'none',
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -679,7 +708,7 @@ export function HomePage() {
               >
                 <div className="flex mb-3">
                   {[...Array(review.rating)].map((_, j) => (
-                    <span key={j} style={{ color: '#0055FF', fontSize: '13px' }}>★</span>
+                    <span key={j} style={{ color: '#4169E1', fontSize: '13px' }}>★</span>
                   ))}
                 </div>
                 <p
@@ -695,7 +724,7 @@ export function HomePage() {
                 </p>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#A0A0A0' }}>
                   {review.name} · {review.location}
-                  {review.verified && <span style={{ color: '#0055FF', marginLeft: '4px' }}>✓ Verified</span>}
+                  {review.verified && <span style={{ color: '#4169E1', marginLeft: '4px' }}>✓ Verified</span>}
                 </p>
                 <p
                   style={{
@@ -720,7 +749,7 @@ export function HomePage() {
       {/* ===== BULK / TEAM ORDERS ===== */}
       <section
         style={{
-          backgroundColor: '#0055FF',
+          backgroundColor: '#4169E1',
           padding: '80px 24px',
           textAlign: 'center',
         }}
@@ -771,7 +800,7 @@ export function HomePage() {
                 padding: '0 32px',
                 backgroundColor: '#fff',
                 borderRadius: '4px',
-                color: '#0055FF',
+                color: '#4169E1',
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '13px',
                 letterSpacing: '0.08em',
@@ -857,7 +886,7 @@ export function HomePage() {
             <motion.p
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', color: '#4A7BF7', fontWeight: 600 }}
+              style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', color: '#4169E1', fontWeight: 600 }}
             >
               ✓ You're on the list. Watch your inbox for Drop 08.
             </motion.p>
@@ -890,7 +919,7 @@ export function HomePage() {
                 style={{
                   height: '48px',
                   padding: '0 24px',
-                  backgroundColor: '#0055FF',
+                  backgroundColor: '#4169E1',
                   border: 'none',
                   borderRadius: '4px',
                   color: '#fff',
@@ -914,7 +943,7 @@ export function HomePage() {
             style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '13px',
-              color: '#0055FF',
+              color: '#4169E1',
               textDecoration: 'none',
               marginTop: '12px',
             }}

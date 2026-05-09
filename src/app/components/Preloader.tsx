@@ -28,7 +28,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
             className="tracking-[0.3em] text-white"
             style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '20px' }}
           >
-            COTTON AURA
+            COOTEN AURA
           </div>
           <div
             className="w-[200px] rounded-full overflow-hidden"
@@ -36,7 +36,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
           >
             <motion.div
               className="h-full rounded-full"
-              style={{ backgroundColor: '#4A7BF7' }}
+              style={{ backgroundColor: '#4169E1' }}
               initial={{ width: '0%' }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.8, ease: 'easeInOut' }}
@@ -46,7 +46,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
             className="tracking-[0.1em] uppercase"
             style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '11px', color: '#606060' }}
           >
-            COMPRESSION · PERFORMANCE · CULTURE
+            COMPRESSION · LUCKNOW · CULTURE
           </div>
         </div>
       </motion.div>

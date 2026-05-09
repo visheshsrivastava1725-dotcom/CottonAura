@@ -58,7 +58,7 @@ export function CheckoutPage() {
         >
           <div
             className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
-            style={{ backgroundColor: '#4A7BF7' }}
+            style={{ backgroundColor: '#4169E1' }}
           >
             <span style={{ fontSize: '28px', color: '#fff' }}>✓</span>
           </div>
@@ -84,7 +84,7 @@ export function CheckoutPage() {
             style={{
               height: '48px',
               padding: '0 32px',
-              backgroundColor: '#4A7BF7',
+              backgroundColor: '#4169E1',
               borderRadius: '4px',
               color: '#fff',
               fontFamily: 'DM Sans, sans-serif',
@@ -221,7 +221,7 @@ export function CheckoutPage() {
                       key={opt.id}
                       className="flex items-center justify-between cursor-pointer p-3 rounded transition-all"
                       style={{
-                        border: `1px solid ${form.shipping === opt.id ? '#4A7BF7' : '#2A2A2A'}`,
+                        border: `1px solid ${form.shipping === opt.id ? '#4169E1' : '#2A2A2A'}`,
                         backgroundColor: form.shipping === opt.id ? 'rgba(74,123,247,0.08)' : 'transparent',
                         borderRadius: '4px',
                       }}
@@ -233,14 +233,14 @@ export function CheckoutPage() {
                           value={opt.id}
                           checked={form.shipping === opt.id}
                           onChange={() => setForm(f => ({ ...f, shipping: opt.id }))}
-                          style={{ accentColor: '#4A7BF7' }}
+                          style={{ accentColor: '#4169E1' }}
                         />
                         <div>
                           <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: '#F2F2F2' }}>{opt.label}</p>
                           <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#A0A0A0' }}>{opt.sub}</p>
                         </div>
                       </div>
-                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: opt.price === 'FREE' ? '#4A7BF7' : '#F2F2F2', fontWeight: 600 }}>
+                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: opt.price === 'FREE' ? '#4169E1' : '#F2F2F2', fontWeight: 600 }}>
                         {opt.price}
                       </span>
                     </label>
@@ -259,7 +259,7 @@ export function CheckoutPage() {
                       key={method.id}
                       className="flex items-center justify-between cursor-pointer p-3 transition-all"
                       style={{
-                        border: `1px solid ${paymentMethod === method.id ? '#4A7BF7' : '#2A2A2A'}`,
+                        border: `1px solid ${paymentMethod === method.id ? '#4169E1' : '#2A2A2A'}`,
                         backgroundColor: paymentMethod === method.id ? 'rgba(74,123,247,0.08)' : 'transparent',
                         borderRadius: '4px',
                       }}
@@ -271,7 +271,7 @@ export function CheckoutPage() {
                           value={method.id}
                           checked={paymentMethod === method.id}
                           onChange={() => setPaymentMethod(method.id)}
-                          style={{ accentColor: '#4A7BF7' }}
+                          style={{ accentColor: '#4169E1' }}
                         />
                         <div>
                           <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: '#F2F2F2' }}>{method.label}</p>
@@ -283,7 +283,7 @@ export function CheckoutPage() {
                           style={{
                             padding: '2px 8px',
                             borderRadius: '4px',
-                            backgroundColor: method.id === 'cod' ? '#1C1C1C' : '#4A7BF7',
+                            backgroundColor: method.id === 'cod' ? '#1C1C1C' : '#4169E1',
                             border: method.id === 'cod' ? '1px solid #2A2A2A' : 'none',
                             color: '#fff',
                             fontFamily: 'Space Mono, monospace',
@@ -321,7 +321,7 @@ export function CheckoutPage() {
                 className="w-full transition-all hover:brightness-110 active:scale-[0.99]"
                 style={{
                   height: '60px',
-                  backgroundColor: '#4A7BF7',
+                  backgroundColor: '#4169E1',
                   border: 'none',
                   borderRadius: '4px',
                   color: '#fff',
@@ -358,7 +358,7 @@ export function CheckoutPage() {
                 {items.length === 0 ? (
                   <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#606060' }}>
                     Your bag is empty.{' '}
-                    <Link to="/" style={{ color: '#4A7BF7' }}>Shop now</Link>
+                    <Link to="/" style={{ color: '#4169E1' }}>Shop now</Link>
                   </p>
                 ) : (
                   <div className="flex flex-col gap-4 mb-4">
@@ -378,7 +378,7 @@ export function CheckoutPage() {
                           <img src={item.product.image} alt={item.product.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           <span
                             className="absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-white"
-                            style={{ backgroundColor: '#4A7BF7', fontSize: '10px', fontFamily: 'DM Sans, sans-serif' }}
+                            style={{ backgroundColor: '#4169E1', fontSize: '10px', fontFamily: 'DM Sans, sans-serif' }}
                           >
                             {item.quantity}
                           </span>
@@ -407,7 +407,7 @@ export function CheckoutPage() {
                       cursor: 'pointer',
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '13px',
-                      color: '#4A7BF7',
+                      color: '#4169E1',
                     }}
                   >
                     <ChevronDown size={14} style={{ transform: promoOpen ? 'rotate(180deg)' : 'none', transition: '0.2s' }} />
@@ -435,7 +435,7 @@ export function CheckoutPage() {
                       />
                       <button
                         type="button"
-                        onClick={() => { if (promoCode === 'COTTON10') setPromoApplied(true); }}
+                        onClick={() => { if (promoCode === 'COOTEN10') setPromoApplied(true); }}
                         style={{
                           height: '40px',
                           padding: '0 16px',
@@ -453,8 +453,8 @@ export function CheckoutPage() {
                     </div>
                   )}
                   {promoApplied && (
-                    <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#4A7BF7', marginTop: '6px' }}>
-                      ✓ COTTON10 applied — 10% off!
+                    <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: '#4169E1', marginTop: '6px' }}>
+                      ✓ COOTEN10 applied — 10% off!
                     </p>
                   )}
                 </div>
@@ -467,7 +467,7 @@ export function CheckoutPage() {
                   </div>
                   <div className="flex justify-between">
                     <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#A0A0A0' }}>Shipping</span>
-                    <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: shippingCost === 0 ? '#4A7BF7' : '#F2F2F2' }}>
+                    <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: shippingCost === 0 ? '#4169E1' : '#F2F2F2' }}>
                       {shippingCost === 0 ? 'FREE' : `₹${shippingCost}`}
                     </span>
                   </div>
@@ -479,8 +479,8 @@ export function CheckoutPage() {
                   )}
                   {discount > 0 && (
                     <div className="flex justify-between">
-                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#4A7BF7' }}>Discount (COTTON10)</span>
-                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#4A7BF7' }}>−₹{discount}</span>
+                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#4169E1' }}>Discount (COOTEN10)</span>
+                      <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#4169E1' }}>−₹{discount}</span>
                     </div>
                   )}
                   <div

@@ -73,7 +73,7 @@ export function SizingPage() {
                   padding: '24px',
                 }}
               >
-                <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '24px', color: '#0055FF', marginBottom: '8px' }}>
+                <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '24px', color: '#4A7BF7', marginBottom: '8px' }}>
                   {item.step}
                 </p>
                 <h3 style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', color: '#F2F2F2', fontWeight: 600, marginBottom: '8px' }}>
@@ -186,7 +186,7 @@ export function SizingPage() {
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
-              color: '#0055FF',
+              color: '#4A7BF7',
               textTransform: 'uppercase',
               letterSpacing: '-0.01em',
               marginBottom: '16px',
@@ -199,10 +199,10 @@ export function SizingPage() {
               Compression tees are designed to fit tighter than regular tees. <strong style={{ color: '#F2F2F2' }}>This is intentional</strong> — the compression supports your muscles and enhances definition.
             </p>
             <p className="mb-3">
-              <strong style={{ color: '#F2F2F2' }}>Rule:</strong> If you're between sizes, go <span style={{ color: '#0055FF', fontWeight: 600 }}>UP one size for comfort</span>.
+              <strong style={{ color: '#F2F2F2' }}>Rule:</strong> If you're between sizes, go <span style={{ color: '#4169E1', fontWeight: 600 }}>UP one size for comfort</span>.
             </p>
             <p>
-              If you want <strong style={{ color: '#F2F2F2' }}>maximum compression effect</strong>, stay true to size. If you prefer a slightly less restrictive feel while still looking defined, size up.
+              If you want <strong style={{ color: '#F2F2F2' }}>maximum Muscle-Hug effect</strong>, stay true to size. If you prefer a slightly less restrictive feel while still looking defined, size up.
             </p>
           </div>
         </section>
@@ -236,7 +236,7 @@ export function SizingPage() {
                   padding: '20px',
                 }}
               >
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#0055FF', fontWeight: 600, letterSpacing: '0.04em', marginBottom: '8px' }}>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#4A7BF7', fontWeight: 600, letterSpacing: '0.04em', marginBottom: '8px' }}>
                   {item.type}
                 </p>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', color: '#A0A0A0', lineHeight: 1.7 }}>
@@ -261,7 +261,7 @@ export function SizingPage() {
             </p>
           </div>
           <a
-            href="https://wa.me/919999999999?text=Hi!%20I%20need%20help%20finding%20my%20size%20for%20Cooten%20Aura%20compression%20tees."
+            href="https://wa.me/919999999999?text=Hi!%20I%20need%20help%20finding%20my%20size%20for%20Cooten Aura%20compression%20tees."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-all hover:brightness-110 shrink-0"
